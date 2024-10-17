@@ -32,7 +32,6 @@ def preprocess_text(text, stopwords):
     tokens = [word for word in words if word.isalnum() and word not in stopwords]
 
     # Menentukan apakah kata tersebut sudah kata dasar atau belum
-
     # Stemming (menggunakan sastrawi), tambahkan pengecekan sebelum stemming
     sastrawi_stemmer = StemmerFactory().create_stemmer()
     hasil_preprocessing = []
